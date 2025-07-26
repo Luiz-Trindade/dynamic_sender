@@ -49,13 +49,13 @@ def process_message(msg_id: str, data: Dict[str, str]):
         print(f"✅ Sessão {session} ativada para mensagem {msg_id}")
         sleep(1)
 
-    print(f"📤 Enviando com {session}: {msg_id} - {message[:40]}...")
-
     if len(active_sessions) >= max_active_sessions:
         print(f"⚠️ Limite de sessões atingido. Desativando todas...")
         for s in active_sessions:
             print(f"❌ Sessão {s} desativada")
         cache["active_sessions_list"] = []
+
+    print(f"📤 Enviando com {session}: {msg_id} - {message[:40]}...")
 
 def run_dynamic_sender():
     messages = cache["messages_queue"]
