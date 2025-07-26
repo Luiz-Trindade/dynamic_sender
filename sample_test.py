@@ -8,7 +8,7 @@ from time import sleep
 import threading
 from sample_messages_10k import messages_list
 
-max_active_sessions = 5
+max_active_sessions = 10
 
 whatsapp_sessions: Dict[str, bool] = {
     "c14f2a88eae14a8fa9b7d7766ab8493a": False,
