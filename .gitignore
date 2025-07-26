@@ -1,0 +1,57 @@
+# .gitignore para Python
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtualenv
+venv/
+.env/
+.venv/
+env/
+ENV/
+
+# Pacotes Python
+*.egg-info/
+*.egg
+dist/
+build/
+*.dist-info/
+*.tar.gz
+*.whl
+
+# Testes e cobertura
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*,cover
+
+# IDEs e editores
+.idea/
+.vscode/
+*.swp
+*.sublime-workspace
+*.sublime-project
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Ambiente e logs
+.env
+*.log
+.pytest_cache/
+.cache/
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Banco de dados local
+*.sqlite3
+*.db
